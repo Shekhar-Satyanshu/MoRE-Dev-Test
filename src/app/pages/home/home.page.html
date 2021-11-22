@@ -1,0 +1,80 @@
+<!-- Menu Segment UI -->
+<ion-menu side="end" content-id="main-content" swipe-gesture="true">
+  <ion-list>
+    <ion-item>
+      <ion-title>Module1</ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-title>Module2</ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-title>Module3</ion-title>
+    </ion-item>
+  </ion-list>
+</ion-menu>
+<ion-content id="main-content">
+  <div class="header-grid ion-padding">
+    <ion-toolbar color="app-default" class="ion-padding-top">
+      <ion-buttons slot="start" (click)="backNavigation()">
+          <img src="/assets/back.png" height="30px" width="30px"/>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-menu-button class="menu-button" autoHide="false"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-row>
+      <ion-col size="9">
+        <h3 class="header-text">Welcome to MoRE module 1 - MoRE to the story</h3>
+      </ion-col>
+      <ion-col size="3">
+        <ion-buttons class="volume-icon">
+          <ion-icon name="volume-off"></ion-icon>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-grid class="ion-padding">
+    <div (click)="expand()">
+      <ion-item lines="none" class="transcript-grid">
+        <ion-label class="transcript-text">Transcript</ion-label>
+        <ion-icon slot="end" color="dark" name="chevron-forward"></ion-icon>
+      </ion-item>
+      <accordian-view expandHeight="500px" [expanded]="isOpened">
+        <h3 class="ion-text-center">Expanded Fine...!!</h3>
+      </accordian-view>
+    </div>
+    <ion-row>
+      <ion-col size="9">
+        <p class="subtitles">Firstly, we would like you to complete the PHQ9 and GAD7 quizzes before you get into today’s module, just so you can track how your mood is going.</p>
+      </ion-col>
+      <ion-col size="3">
+        <ion-buttons [ngClass]="{ 'status-change': isBookmarkedClicked}" class="bookmark-icon" (click)="bookmark()">
+          <ion-icon name="bookmark"></ion-icon>
+        </ion-buttons>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="12">
+        <p class="then-ellipsis">Then...</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="12">
+        <ul class="bullet-poits-list">
+          <li>Feedback on your quiz results</li>
+          <li>Review your mood monitoring activity</li>
+          <li>Problem brainstorming/current concerns</li>
+          <li>Starting point</li>
+          <li>Identifying life’s hurdles and personal strengths</li>
+          <li>My story</li>
+        </ul>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="12" class="ion-text-center">
+        <ion-button color="submit" expand="block">Next</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

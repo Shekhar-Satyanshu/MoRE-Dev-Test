@@ -1,0 +1,75 @@
+.header-grid {
+  background-color: var(--ion-color-app-default);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  .menu-button {
+    color: var (--ion-color-light);
+    font-size: xx-large;
+  }
+  .header-text {
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 34px;
+  }
+  .volume-icon {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    color: #7DBCB7;
+    background-color: #fff;
+    font-size: xx-large;
+    border-radius: 50%;
+    align-items: center;
+    padding: 5px;
+  }
+}
+
+.transcript-grid {
+  --background: transparent;
+  .transcript-text {
+    color: var(--ion-color-transcript);
+    font-size: 1rem;
+  }
+}
+
+.subtitles {
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 28px;
+  color: #41A1A5;
+}
+
+.bookmark-icon {
+  color: #FFFFFF;
+  background-color: #6BC0C3;
+  font-size: xx-large;
+  align-items: center;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.then-ellipsis {
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #41A1A5;
+  margin: 0;
+}
+
+.bullet-poits-list {
+  padding-left: 20px;
+  li {
+    font-size: 16px;
+    line-height: 32px;
+    color: #848484;
+  }
+}
+
+.status-change {
+  color: var(--ion-color-warning);
+  background-color: var(--ion-color-dark);
+}

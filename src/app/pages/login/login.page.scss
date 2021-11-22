@@ -1,0 +1,38 @@
+.header-grid {
+  padding-top: 10%;
+  h3 {
+    color: var(--ion-color-RobinEggBlue);
+    font-weight: 600;
+  }
+}
+ion-list {
+  background: transparent;
+  .input-field {
+    margin: 15px 0;
+    border: 1px solid var(--ion-color-border);
+    border-radius: 30px;
+    align-items: center;
+    ion-label {
+      --color: var(--ion-color-text);
+    }
+    p {
+      color: var(--ion-color-text);
+      padding-right: 5px;
+    }
+  }
+  .confirmation-grid {
+    align-items: center;
+    p {
+      color: var(--ion-color-confirmationText);
+      font-size: 0.875rem;
+    }
+  }
+  .already-account-txt {
+    color: var(--ion-color-confirmationText);
+    font-size: 0.875rem;
+  }
+}
+
+.is-invalid {
+  border: 1px solid var(--ion-color-danger) !important;
+}

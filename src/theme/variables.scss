@@ -74,6 +74,63 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** App Default Colors **/
+  --ion-color-screen-bg: #FFFBF8;
+  --ion-color-screen-bg-rgb: 255, 251, 248;
+  --ion-color-screen-bg-contrast: #000000;
+  --ion-color-screen-bg-contrast-rgb: 0, 0, 0;
+  --ion-color-screen-bg-shade: #f0ece9;
+  --ion-color-screen-bg-tint: #f1e7e0;
+
+  --ion-color-app-default: #6BC0C3;
+  --ion-color-app-default-rgb: 107, 192, 195;
+  --ion-color-app-default-contrast: #ffffff;
+  --ion-color-app-default-contrast-rgb: 255, 255, 255;
+  --ion-color-app-default-shade: #6aced1;
+  --ion-color-app-default-tint: #79c6c9;
+
+  --ion-color-submit: #53aab4;
+  --ion-color-submit-rgb: 83, 170, 180;
+  --ion-color-submit-contrast: #ffffff;
+  --ion-color-submit-contrast-rgb: 255, 255, 255;
+  --ion-color-submit-shade: #48a8b3;
+  --ion-color-submit-tint: #58c2ce;
+  --ion-color-transcript:#3B3D41;
+
+  .ion-color-screen-bg {
+    --ion-color-base: var(--ion-color-screen-bg);
+    --ion-color-base-rgb: var(--ion-color-screen-bg-rgb);
+    --ion-color-contrast: var(--ion-color-screen-bg-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-screen-bg-contrast-rgb);
+    --ion-color-shade: var(--ion-color-screen-bg-shade);
+    --ion-color-tint: var(--ion-color-screen-bg-tint);
+  }
+
+  .ion-color-app-default {
+    --ion-color-base: var(--ion-color-app-default);
+    --ion-color-base-rgb: var(--ion-color-app-default-rgb);
+    --ion-color-contrast: var(--ion-color-app-default-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-app-default-contrast-rgb);
+    --ion-color-shade: var(--ion-color-app-default-shade);
+    --ion-color-tint: var(--ion-color-app-default-tint);
+  }
+
+  .ion-color-submit {
+    --ion-color-base: var(--ion-color-submit);
+    --ion-color-base-rgb: var(--ion-color-submit-rgb);
+    --ion-color-contrast: var(--ion-color-submit-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-submit-contrast-rgb);
+    --ion-color-shade: var(--ion-color-submit-shade);
+    --ion-color-tint: var(--ion-color-submit-tint);
+  }
+
+  --ion-color-RobinEggBlue : #41A1A5;
+  --ion-color-border : #BCBCBC;
+  --ion-color-text: #A2AAAA;
+  --ion-color-confirmationText: #848484;
+
+
 }
 
 @media (prefers-color-scheme: dark) {
